@@ -1,0 +1,457 @@
+:root {
+  --color-button: #de0813;
+  --color-heading: #ffff;
+  --color-placeholder: #4b5e7c;
+  --border-radius: 2px;
+  --color-body: #fff;
+  --color-background: #000;
+  --questions-background: rgb(48, 48, 48);
+  --border-bottom: 6px solid var(--questions-background);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  background: black;
+  color: var(--color-body);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+::placeholder {
+  font-size: 0.7rem;
+}
+/* first block start*/
+.content1 {
+  max-width: 100%;
+  max-height: 100%;
+  background: url(../images/large.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+.container {
+  background: radial-gradient(rgb(0, 0, 0, 0.5) 50%, rgb(0, 0, 0) 100%);
+  border-bottom: var(--border-bottom);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  align-items: center;
+}
+.input {
+  width: 350px;
+  padding: 0.6rem 0.2rem;
+  margin-bottom: 0.8rem;
+  outline: 0;
+}
+
+.button {
+  background: var(--color-button);
+  color: var(--color-heading);
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+}
+.button--primary {
+  width: 100px;
+  padding: 0.4rem 0.2rem;
+  margin-bottom: 4.5rem;
+  width: 110px;
+  opacity: 0.9;
+}
+.button--primary:hover {
+  background: var(--color-button);
+  opacity: 1;
+}
+.button__header {
+  padding: 0 0.5rem;
+  height: 1.3rem;
+  width: 3.3rem;
+  font-size: 0.7rem;
+}
+.icon--button {
+  width: 10px;
+  height: 10px;
+  color: #fff;
+  margin-left: 0.2rem;
+}
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.header__logo {
+  width: 70px;
+  height: 80px;
+}
+.h1,
+.paragraph,
+h2 {
+  color: var(--color-body);
+  text-align: center;
+}
+.h1 {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+.paragraph {
+  font-size: 0.9rem;
+}
+.first__para {
+  margin-top: 1.5rem;
+}
+.second__para {
+  margin: 0 4rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .h1 {
+    font-size: 3rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 5rem;
+  }
+  .header__logo {
+    width: 110px;
+    height: 110px;
+  }
+  .button__header {
+    width: 4.5rem;
+    height: 1.8rem;
+    font-size: 0.9rem;
+  }
+  .form {
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 10rem;
+  }
+  .button--primary,
+  .input {
+    height: 3.5rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+  }
+  .input {
+    width: 400px;
+    padding-left: 0.7rem;
+  }
+  .button--primary {
+    width: 200px;
+    margin-left: -0.1rem;
+    font-size: 1.4rem;
+  }
+  .icon--button {
+    width: 20px;
+    height: 16px;
+  }
+  .first__para {
+    font-size: 1.2rem;
+  }
+}
+/* First block end */
+
+/*Second block start*/
+.content2 {
+  background: var(--color-background);
+  padding-bottom: 6rem;
+  border-bottom: var(--border-bottom);
+}
+.h2 {
+  padding-top: 3rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.third__para {
+  margin: 0 1rem;
+}
+.tv {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  width: 370px;
+  height: 280px;
+  position: absolute;
+}
+.video {
+  align-self: center;
+  width: 300px;
+  height: 250px;
+}
+@media screen and (min-width: 768px) {
+  .content2 {
+    display: flex;
+    gap: 4rem;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 600px;
+  }
+  .h2,
+  .third__para {
+    text-align: justify;
+  }
+  .third__para {
+    margin: 0;
+    margin-right: 5rem;
+    font-size: 1.3rem;
+  }
+  .h2 {
+    font-size: 2.5rem;
+  }
+}
+/* second block end */
+
+/* third block start */
+
+.things {
+  width: 370px;
+  height: 280px;
+  position: relative;
+}
+.grid {
+  display: grid;
+}
+.fourth__para {
+  margin: 0 1.3rem;
+}
+.mobile {
+  position: relative;
+}
+.top {
+  display: flex;
+  margin-left: 4.8rem;
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid var(--questions-background);
+  background: var(--color-background);
+  top: 70%;
+  position: absolute;
+}
+.image2 {
+  margin-top: 8px;
+  margin-left: 10px;
+  height: 40px;
+}
+.box--content {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.P1,
+.P2 {
+  color: var(--color-body);
+}
+.P1 {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.P2 {
+  color: rgb(62, 62, 213);
+}
+.checkbox {
+  margin-left: 2rem;
+}
+.grid {
+  padding-bottom: 4rem;
+}
+.content3 {
+  border-bottom: var(--border-bottom);
+}
+.content4 {
+  border-bottom: var(--border-bottom);
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 6rem;
+  }
+  .element:nth-of-type(1) {
+    order: 2;
+  }
+  .things {
+    width: 410px;
+    height: 300px;
+    position: relative;
+    margin-top: 4rem;
+  }
+  .top {
+    display: flex;
+    margin-left: 5.4rem;
+    width: 240px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid var(--questions-background);
+    background: var(--color-background);
+    top: 70%;
+    position: absolute;
+  }
+  .box--content {
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .P1 {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .checkbox {
+    margin-left: 3rem;
+  }
+  .element {
+    padding-top: 2rem;
+    margin-top: 4rem;
+  }
+  .image2 {
+    height: 50px;
+  }
+  .h2__special {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-right: 4.4rem;
+  }
+  .para {
+    width: 450px;
+    margin-left: 9rem;
+    padding-right: 1rem;
+  }
+  .content4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20rem;
+    border-bottom: var(--border-bottom);
+  }
+  .heading__kid {
+    margin-right: 4rem;
+  }
+}
+
+/* Collapsibles */
+.collapsible {
+  background: var(--questions-background);
+  justify-content: center;
+  margin-bottom: 0.4rem;
+}
+.questions {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0 1rem;
+  align-items: center;
+  height: 40px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-background);
+}
+
+.collapsible__chevron {
+  height: 30px;
+  width: 20px;
+  transform: rotate(-90deg);
+  transition: 0.3s;
+}
+.collapsible__content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background: var(--questions-background);
+  font-size: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s;
+}
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  padding: 1rem;
+}
+.question--block {
+  border-bottom: var(--border-bottom);
+}
+@media screen and (min-width: 768px) {
+  .questions {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  .collapsible {
+    margin: 0 17rem;
+    margin-bottom: 0.4rem;
+  }
+  .collapsible__header {
+    height: 60px;
+    font-size: 1.3rem;
+  }
+  .email--button {
+    margin-top: 3rem;
+  }
+  .email {
+    margin-bottom: 4rem;
+  }
+}
+
+/* Footer */
+.footer {
+  color: rgb(123, 124, 118);
+  font-size: 0.65rem;
+  margin: 2rem;
+  margin-bottom: 1rem;
+}
+.a {
+  display: block;
+}
+.a:hover {
+  text-decoration: underline;
+}
+.links {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem 0.7rem;
+  margin-bottom: 1rem;
+}
+.footer__head {
+  margin-top: 2.8rem;
+  margin-bottom: 1.4rem;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .links {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 0;
+    margin-bottom: 2rem;
+  }
+  .footer {
+    margin: 2rem 15rem;
+  }
+}

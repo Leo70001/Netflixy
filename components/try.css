@@ -1,0 +1,26 @@
+.super-container {
+  height: 400px;
+  background: var(--color-background);
+  border-bottom: 8px solid rgb(143, 135, 135);
+}
+.content2 {
+  display: flex;
+  padding: 0 5rem;
+  justify-content: flex-start;
+}
+
+.h2 {
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+.image {
+  width: 400px;
+  height: 280px;
+  position: absolute;
+}
+.third__para {
+  margin: 0 5rem;
+  text-align: left;
+  padding: 0 5rem;
+  font-size: 1.2rem;
+}
